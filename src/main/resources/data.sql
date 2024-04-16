@@ -1,0 +1,10 @@
+INSERT INTO VEHICLE (make, model, year, vin) VALUES ( 'Bugatti', 'v8', 2024, 'speed');
+INSERT INTO VEHICLE (make, model, year, vin) VALUES ( 'Lamborghini', 'v8', 2024, 'speed');
+INSERT INTO VEHICLE (make, model, year, vin) VALUES ( 'Ferrari', 'v8', 2024, 'speed');
+INSERT INTO VEHICLE (make, model, year, vin) VALUES ( 'Porsche', 'v8', 2024, 'speed');
+INSERT INTO VEHICLE ( make, model, year, vin) VALUES ( 'RollsRoyce', 'v8', 2024, 'speed');
+INSERT INTO VEHICLE (make, model, year, vin) VALUES ( 'car', 'v8', 2024, 'speed');
+INSERT INTO VEHICLE (make, model, year, vin) VALUES ( 'BMW', 'v8', 2024, 'speed');
+INSERT INTO VEHICLE (make, model, year, vin) VALUES ( 'Audi', 'v8', 2024, 'speed');
+INSERT INTO VEHICLE (make, model, year, vin) VALUES ( 'Bentley', 'v8', 2024, 'speed');
+INSERT INTO VEHICLE (make, model, year, vin) VALUES ('Mercedes', 'v8', 2024, 'speed');
