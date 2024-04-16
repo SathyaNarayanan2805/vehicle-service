@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class VehicleServiceImpl implements VehicleService{
+public class VehicleServiceImpl implements VehicleService {
 
     private final VehicleRepository vehicleRepository;
 
@@ -20,16 +20,17 @@ public class VehicleServiceImpl implements VehicleService{
     }
 
     public Vehicle getVehicle(final Long id) {
-    return vehicleRepository.findById(id)
-            .orElseThrow( () -> new IllegalArgumentException("Vehicle not found with id: "+id));
+        return vehicleRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Vehicle not found with id: " + id));
     }
 
-    public  Vehicle saveVehicle(final Vehicle vehicle) {
+    public Vehicle saveVehicle(final Vehicle vehicle) {
         return vehicleRepository.save(vehicle);
     }
+
     public Vehicle updateVehicle(final Vehicle vehicle) {
         Vehicle oldVehicle = vehicleRepository.findById(vehicle.getId())
-                .orElseThrow(() -> new IllegalArgumentException("Vehicle not found with id: "+vehicle.getId()));
+                .orElseThrow(() -> new IllegalArgumentException("Vehicle not found with id: " + vehicle.getId()));
         oldVehicle.setMake(vehicle.getMake());
         oldVehicle.setModel(vehicle.getModel());
         oldVehicle.setYear(vehicle.getYear());
@@ -38,7 +39,7 @@ public class VehicleServiceImpl implements VehicleService{
         return vehicleRepository.save(oldVehicle);
     }
 
-    public void deleteVehicle(final Long id){
+    public void deleteVehicle(final Long id) {
         vehicleRepository.deleteById(id);
     }
 }
